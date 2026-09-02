@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scan & Collect Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<style>
+  :root {
+    --bg: #f6f1ea;
+    --surface: #ffffff;
+    --text: #241c1a;
+    --muted: #6b6058;
+    --border: #e7ddcd;
+    --accent: #8a6d3b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #150f1a;
+      --surface: #1c1620;
+      --text: #f7ece0;
+      --muted: #a89e94;
+      --border: #34293a;
+      --accent: #e3c99f;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+    margin: 0;
+    padding: 56px 24px 90px;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 700px; margin: 0 auto; }
+
+  .eyebrow {
+    font-family: "Chakra Petch", monospace;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 10px;
+  }
+  h1 {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-size: clamp(26px, 4vw, 34px);
+    margin: 0 0 8px;
+  }
+  .updated { color: var(--muted); font-size: 13px; margin: 0 0 40px; }
+
+  h2 {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 40px 0 12px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; margin-top: 32px; }
+
+  p, li { color: var(--text); font-size: 15px; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  strong { color: var(--text); }
+  a { color: var(--accent); }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 20px;
+    font-size: 14px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+  }
+
+  .callout {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px 18px;
+    font-size: 14px;
+    color: var(--muted);
+    margin: 16px 0 24px;
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Scan &amp; Collect</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: August 31, 2026</p>
+
+  <p>Scan &amp; Collect is a personal card-collecting and grading tool. This page explains what
+    data the app collects, why, and where it goes. If anything here is unclear, contact us at the
+    address at the bottom of this page.</p>
+
+  <h2>Data we collect</h2>
+  <table>
+    <tr><th>What</th><th>Why</th><th>Where it's stored</th></tr>
+    <tr>
+      <td>Email address, password</td>
+      <td>Create and sign in to your account</td>
+      <td>Firebase Authentication (Google)</td>
+    </tr>
+    <tr>
+      <td>Photos of your cards</td>
+      <td>Identify the card and, optionally, grade its condition</td>
+      <td>Sent to Google Gemini and Ximilar for one-time processing — not stored by us</td>
+    </tr>
+    <tr>
+      <td>Your card collection (cards, conditions, grades, quantities)</td>
+      <td>Show your portfolio and its value</td>
+      <td>Stored locally on your device only</td>
+    </tr>
+    <tr>
+      <td>Card search terms</td>
+      <td>Look up cards and prices</td>
+      <td>Sent to the Pokémon TCG API — no personal data included</td>
+    </tr>
+  </table>
+
+  <div class="callout">
+    We don't run ads, analytics, or trackers in this app, and we don't sell your data to anyone.
+  </div>
+
+  <h2>Third-party services</h2>
+  <p>Scan &amp; Collect relies on a few external services to work. Each processes the data
+    described above under its own privacy policy:</p>
+  <ul>
+    <li><strong>Firebase</strong> (Google) — account creation and sign-in</li>
+    <li><strong>Google Gemini API</strong> — reading the card name and number from your photos</li>
+    <li><strong>Ximilar</strong> — estimating card condition from your photos</li>
+    <li><strong>Pokémon TCG API</strong> — card details and market prices</li>
+  </ul>
+
+  <h2>Data retention and deletion</h2>
+  <p>Your collection data lives only on your device — uninstalling the app removes it. Card
+    photos sent for recognition or grading are processed once and are not retained by us
+    afterward. To delete your account and associated sign-in data, contact us at the email below.</p>
+
+  <h2>Children's privacy</h2>
+  <p>Scan &amp; Collect is not directed at children under 13, and we do not knowingly collect data
+    from them.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the "last updated" date above will change too. Continued use of the
+    app after an update means you accept the revised policy.</p>
+
+  <h2>Trademark notice</h2>
+  <p>Scan &amp; Collect is an independent, unofficial tool and is not affiliated with, endorsed by,
+    or sponsored by Nintendo, Game Freak, Creatures Inc., or The Pokémon Company. Pokémon and all
+    related card names, images, and trademarks are the property of their respective owners, used
+    here only to identify and describe cards.</p>
+
+  <footer>
+    Questions about this policy or your data? Contact <a href="mailto:support.scancollect@gmail.com">support.scancollect@gmail.com</a>.
+  </footer>
+</div>
+</body>
+</html>
